@@ -2,11 +2,11 @@ const express = require("express");
 
 const SubcategoryRoute = express.Router();
 const {
-    CategoryCtrl,fetchallCategoryCtrl
-} = require("../controllers/CategortCtrl");
+    createsubCategoryCtrl,fetchsubcategoriesCtrl
+} = require("../controllers/SubcategoryCtrl");
 
-SubcategoryRoute.post("/",CategoryCtrl);
-SubcategoryRoute.get("/",fetchallCategoryCtrl);
+SubcategoryRoute.post("/",createsubCategoryCtrl);
+SubcategoryRoute.get("/",fetchsubcategoriesCtrl);
 
 
-module.exports = CategoryRoute;
+module.exports = SubcategoryRoute;
